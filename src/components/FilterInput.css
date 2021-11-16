@@ -1,0 +1,14 @@
+.select-option {
+  margin-left: 100px;
+  border-radius: 0 20px;
+  border-left-style: solid;
+  border-width: thick;
+  padding: 10px 20px;
+  border-color: #4e9f3d;
+  background-color: #d8e9a8;
+}
+
+.filter-todo {
+  width: 140px;
+  height: 31px;
+}

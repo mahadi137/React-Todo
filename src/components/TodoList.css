@@ -1,0 +1,10 @@
+.div-todo-ul {
+  background-color: aqua;
+  width: 500px;
+}
+
+.todo-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

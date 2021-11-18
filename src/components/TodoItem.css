@@ -1,54 +1,43 @@
-.div-todo-li {
+.todo {
   width: 480px;
-  background-color: blueviolet;
-  margin: 0 auto;
+  margin: 5px;
+  background: white;
+  font-size: 20px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-li p {
-  width: 352px;
-  /* height: auto; */
-  height: -moz-fit-content;
-  /* height: fit-content; */
-  /* border: 1px solid black; */
-  margin-bottom: -31px;
-  background-color: #f3f4f6;
-  text-align: left;
-  padding: 5px;
+.todo-item {
+  padding: 0 5px;
+  /*width: 80%;*/
+  white-space: nowrap;
+  width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.button-check,
+.button-edit,
+.button-trash {
+  width: 30px;
+  height: 28px;
+  cursor: pointer;
+  border: none;
+  color: #f7fffe;
 }
 
-.li-button {
-  display: inline-flex;
-  margin-left: 363px;
+.button-check {
+  background: #62b4fe;
+}
+.button-edit {
+  background: #f9aa4b;
 }
 
-.submit-button {
-  /*
-    height: 35px;
-    margin-top: 22px;
-    background-color: #b2d198;
-    */
-  width: 40px;
-  height: 32px;
+.button-trash {
+  background: #ff7461;
 }
 
-.check {
-  color: #62b4fe;
-}
-
-.edit {
-  color: #f9aa4b;
-}
-
-.trash {
-  color: #ff7461;
-}
-.check,
-.edit,
-.trash {
-  margin: 0;
-  margin-left: -1px;
-}
-
-.fas {
-  font-size: 18px;
+.todo li {
+  flex: 1;
 }

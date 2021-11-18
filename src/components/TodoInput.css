@@ -18,13 +18,15 @@
   width: 426px;
 }
 
+.tag-input {
+  width: 140px;
+}
+
 .todo-input,
 .tag-input {
   height: 25px;
-}
-
-.tag-input {
-  width: 140px;
+  border: none;
+  border-bottom: 1px solid #4e9f3d;
 }
 
 .div-tag,
@@ -33,17 +35,20 @@
 }
 
 .submit-button {
-  /*
-  height: 35px;
-  margin-top: 22px;
-  background-color: #b2d198;
-  */
   width: 40px;
-  height: 32px;
-  margin-top: 26px;
+  height: 28px;
+  margin-top: 27px;
   color: #4e9f3d;
+  background: #f7fffe;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
 }
 
+.submit-button:hover {
+  color: #f7fffe;
+  background: #4e9f3d;
+}
 .fas {
   font-size: 18px;
 }

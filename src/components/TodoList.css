@@ -1,10 +1,13 @@
-.div-todo-ul {
+.todo-container {
   background-color: aqua;
   width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.todo-ul {
-  list-style-type: none;
+.todo-list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }

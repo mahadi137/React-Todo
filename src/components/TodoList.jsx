@@ -8,9 +8,8 @@ import TodoItem from "../components/TodoItem";
 
 const TodoList = (props) => {
   return (
-    <div className="div-todo-ul">
-      <h3>TAG</h3>
-      <ul className="todo-ul">
+    <div className="todo-container">
+      <ul className="todo-list">
         {props.TodoItemsArray.map((eachTodo) => (
           <TodoItem key={eachTodo.id} text={eachTodo.text} tag={eachTodo.tag} />
         ))}

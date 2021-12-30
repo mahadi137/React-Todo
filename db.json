@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "tag": "skill",
+      "todo": "learn react udemy",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "tag": "skill",
+      "todo": "do coding",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "tag": "gym",
+      "todo": "do 10 pushups",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "tag": "entertainment",
+      "todo": "watch witcher on netflix",
+      "completed": false,
+      "id": 4
+    },
+    {
+      "tag": "eat",
+      "todo": "got to ravintola",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "tag": "learn",
+      "todo": "learn about cars!",
+      "completed": true,
+      "id": 6
+    },
+    {
+      "tag": "no",
+      "todo": "go bibo",
+      "completed": true,
+      "id": 7
+    }
+  ]
+}

@@ -1,36 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //CSS
 import "./App.css";
 
 //Importing components
-import TodoInput from "./components/TodoInput";
-import TodoList from "./components/TodoList";
+import Home from "./components/pages/Home";
+import Navbar from "./components/pages/Navbar";
+import Info from "./components/pages/Info";
+import Archive from "./components/pages/Archive";
 
 function App() {
-  const [InputText, setInputText] = useState("");
-  const [TagText, setTagText] = useState("");
-  const [TodoItemsArray, setTodoItemsArray] = useState([]);
-
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>Todo List</h1>
-        <hr />
-      </header>
-      <TodoInput
-        //Todo Input
-        InputText={InputText}
-        setInputText={setInputText}
-        TodoItemsArray={TodoItemsArray}
-        setTodoItemsArray={setTodoItemsArray}
-        //Tag Input
-        TagText={TagText}
-        setTagText={setTagText}
-      />
-
-      <TodoList TodoItemsArray={TodoItemsArray} />
-    </div>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/archive" element={<Archive />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

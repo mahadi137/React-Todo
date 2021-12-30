@@ -1,11 +1,31 @@
-.full-todo-item {
-  margin-top: 10px;
+.archive {
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  width: 1140px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  color: #3a2b2a;
+  font-size: 30px;
+  font-style: italic;
+  margin: 25px 0 0;
 }
 
-.todo {
-  width: 480px;
+.tagandtodo {
+  display: flex;
+}
 
-  background: white;
+.full-todo-itemm {
+  margin-top: 10px;
+  width: 50px;
+  margin-left: 322px;
+}
+
+.todos {
+  width: 480px;
+  background: #4e9f3d;
   font-size: 20px;
   color: black;
   display: flex;
@@ -13,7 +33,7 @@
   align-items: center;
 }
 
-.todo-item-tag {
+.todo-item-tagg {
   background-color: #d8e9a8;
   padding: 2px 10px;
   float: left;
@@ -25,19 +45,16 @@
   margin: 0;
 }
 
-.todo-item {
+.todo-itemm {
+  list-style-type: none;
   text-transform: capitalize;
-  background-color: #4e9f3d;
   color: white;
   padding: 0 5px;
   white-space: nowrap;
-  width: 50px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.button-check,
-.button-edit,
-.button-trash {
+.button-undo {
   width: 30px;
   height: 27px;
   cursor: pointer;
@@ -45,22 +62,12 @@
   color: #f7fffe;
 }
 
-.button-check {
-  background: #62b4fe;
-}
-.button-edit {
+.button-undo {
   background: #f9aa4b;
 }
 
-.button-trash {
-  background: #ff7461;
-}
-
 .todo li {
+  list-style-type: none;
+  text-align: center;
   flex: 1;
-}
-
-.completedStyle {
-  color: #e5e2e27a;
-  text-decoration: line-through;
 }

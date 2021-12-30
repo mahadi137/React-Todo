@@ -1,0 +1,21 @@
+.search {
+  padding: 6px;
+}
+
+.search input {
+  width: 37%;
+  border: 1px solid #4e9f3d;
+  padding: 5px;
+  text-align: center;
+  border-radius: 20px 0;
+  border-left-style: solid;
+  background-color: #d8e9a8;
+  margin-right: -5px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #3a2b2a;
+  background-image: linear-gradient(to right, #ccc, #3a2b2a, #ccc);
+}

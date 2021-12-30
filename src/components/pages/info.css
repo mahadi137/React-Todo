@@ -1,0 +1,44 @@
+.info {
+  height: 100vh;
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.kuvaus {
+  width: 180px;
+  clip-path: circle();
+}
+
+.info h1 {
+  color: #4e9f3d;
+  margin: 0 auto;
+  width: 700px;
+  justify-content: center;
+  text-align: center;
+}
+
+.info h4,
+p {
+  color: #3a2b2a;
+}
+
+.info h4 {
+  margin-top: 35px;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.info p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.hamburgericon {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.homeandarchive {
+  width: 1000px;
+  margin: 35px auto;
+}

@@ -1,5 +1,5 @@
 .todo-container {
-  background-color: aqua;
+  margin: 0 auto;
   width: 500px;
   display: flex;
   justify-content: center;

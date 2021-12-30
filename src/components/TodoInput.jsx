@@ -5,30 +5,16 @@ import "../components/TodoInput.css";
 
 //Importing components
 import TitleText from "../components/TitleText";
-import FilterInput from "../components/FilterInput";
 
 const TodoInput = (props) => {
+  //Collect data from input field
   const inputTextHandler = (e) => {
     props.setInputText(e.target.value);
   };
 
+  //Collect data from tag field
   const tagTextHandler = (e) => {
     props.setTagText(e.target.value);
-  };
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-    props.setTodoItemsArray([
-      ...props.TodoItemsArray,
-      {
-        id: Math.random() * 101,
-        tag: props.TagText,
-        text: props.InputText,
-        completed: false,
-      },
-    ]);
-    props.setInputText("");
-    props.setTagText("");
   };
 
   return (
@@ -52,12 +38,15 @@ const TodoInput = (props) => {
             className="tag-input"
           />
         </div>
-        <button onClick={submitHandler} className="submit-button" type="submit">
+        <button
+          //Todo Submit Button
+          onClick={props.submitHandler}
+          className="submit-button"
+          type="submit"
+        >
           <i class="fas fa-plus-circle"></i>
         </button>
       </form>
-
-      <FilterInput />
     </div>
   );
 };

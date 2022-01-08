@@ -52,3 +52,22 @@
 .fas {
   font-size: 18px;
 }
+
+@media only screen and (max-width: 500px) {
+  .input-section {
+    width: 85%;
+  }
+
+  .todo-input {
+    width: 150%;
+  }
+
+  .tag-input {
+    width: 95%;
+  }
+
+  .div-tag {
+    margin-right: 5px;
+    margin-left: 60px;
+  }
+}

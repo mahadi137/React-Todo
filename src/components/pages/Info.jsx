@@ -22,7 +22,10 @@ export default function Info() {
         My app has three page. Home is for main page with all the input field
         and show casing the todo list. Info is for general guideline and author
         info. Archive is for all the deleted todos. User also can undo todo from
-        Archive page.
+        Archive page. <br />
+        <h5>
+          <em>All these pictures guide are created by me.</em>
+        </h5>
       </p>
       <h4>General Guideline</h4>
       <p>

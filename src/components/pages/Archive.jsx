@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Data from "../../components/fetch";
 
 //CSS
-import "./pagesStyle.css";
+import "./archive.css";
 
 export default function Archive() {
   const [archiveDataTodoData, setArchiveDataTodoData] = useState([]);
@@ -20,7 +20,10 @@ export default function Archive() {
 
   return (
     <div className="archive">
-      <h1 className="heading">Hi! This is Your Todo List Archive Page</h1>
+      <h1 className="heading">
+        Hi! This is Your Todo List Archive Page. You can restore todos by
+        clicking undo button.
+      </h1>
       {archiveDataTodoData.map((eachArchiveTodo) => {
         //Show data which todo is deleted
         if (eachArchiveTodo.completed === true) {
@@ -28,7 +31,7 @@ export default function Archive() {
             <div className="full-todo-itemm">
               <p className="todo-item-tagg">{eachArchiveTodo.tag}</p>
               <div className="todos">
-                <li className={"todo-itemm"}>{eachArchiveTodo.todo}</li>
+                <li className="todo-itemm">{eachArchiveTodo.todo}</li>
 
                 <button
                   //Undo button Hnadle functionality

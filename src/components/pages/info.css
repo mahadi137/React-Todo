@@ -42,3 +42,36 @@ p {
   width: 1000px;
   margin: 35px auto;
 }
+
+@media only screen and (max-width: 500px) {
+  .info {
+    width: 90%;
+  }
+
+  .kuvaus {
+    width: 30%;
+  }
+
+  .info h1 {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .info h4 {
+    font-size: 20px;
+  }
+
+  .info p {
+    text-align: justify;
+    margin-top: -15px;
+    font-size: 18px;
+  }
+
+  .hamburgericon {
+    width: 30px;
+  }
+
+  .homeandarchive {
+    width: 100%;
+  }
+}

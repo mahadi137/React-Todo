@@ -4,7 +4,6 @@
 
 .todo {
   width: 480px;
-
   background: white;
   font-size: 20px;
   color: black;
@@ -26,15 +25,22 @@
 }
 
 .todo-item {
+  width: 380px;
   text-transform: capitalize;
   background-color: #4e9f3d;
   color: white;
   padding: 0 5px;
   white-space: nowrap;
-  width: 50px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.div-button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .button-check,
 .button-edit,
 .button-trash {
@@ -56,11 +62,18 @@
   background: #ff7461;
 }
 
-.todo li {
-  flex: 1;
-}
-
 .completedStyle {
   color: #e5e2e27a;
   text-decoration: line-through;
+}
+
+@media only screen and (max-width: 500px) {
+  .todo {
+    width: 420px;
+  }
+
+  .todo-item {
+    display: flex;
+    width: 320px;
+  }
 }

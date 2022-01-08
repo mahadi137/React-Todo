@@ -64,32 +64,34 @@ const TodoItem = (props) => {
           {props.text}
         </li>
 
-        <button
-          //Todo Complete Button
-          onClick={todoCompleteHandler}
-          className={"button-check"}
-          type="submit"
-        >
-          <i class="fas fa-check"></i>
-        </button>
+        <div className="div-button">
+          <button
+            //Todo Complete Button
+            onClick={todoCompleteHandler}
+            className={"button-check"}
+            type="submit"
+          >
+            <i class="fas fa-check"></i>
+          </button>
 
-        <button
-          //Todo Edit Button
-          onClick={todoEditHandler}
-          className="button-edit"
-          type="submit"
-        >
-          <i class="far fa-edit"></i>
-        </button>
+          <button
+            //Todo Edit Button
+            onClick={todoEditHandler}
+            className="button-edit"
+            type="submit"
+          >
+            <i class="far fa-edit"></i>
+          </button>
 
-        <button
-          //Todo Delete Button
-          onClick={deleteHandler}
-          className="button-trash"
-          type="submit"
-        >
-          <i class="far fa-trash-alt"></i>
-        </button>
+          <button
+            //Todo Delete Button
+            onClick={deleteHandler}
+            className="button-trash"
+            type="submit"
+          >
+            <i class="far fa-trash-alt"></i>
+          </button>
+        </div>
       </div>
     </div>
   );

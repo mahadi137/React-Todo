@@ -21,6 +21,10 @@ function Home() {
   const [todoData, setTodoData] = useState([]);
   //For edit funtionality
   const [editId, setEditId] = useState("");
+  //Toggle the database
+  const [toggleModifiedData, setToggleModifiedData] = useState(false);
+  //useEffect use after delete button click
+  const [latestModifiedData, setLatestModifiedData] = useState(null);
 
   //For loading data from database
   useEffect(() => {
@@ -30,15 +34,17 @@ function Home() {
     }
     getData();
     //load data once there is a change in database
-  }, [todoData]);
+  }, [latestModifiedData]);
 
   //Submit button functionality
-  function submitHandler() {
-    if (!InputText) {
-      //if user forget to input todo text
+  function submitHandler(e) {
+    if (!InputText || !TagText) {
+      //if user forget to input todo text or tag
       //only tag is not enough
       alert("Please Fill Data First!");
     } else if (editId) {
+      e.preventDefault();
+      setLatestModifiedData(!latestModifiedData);
       //if user click on edit button
       //only for purticular id
       setTodoData(
@@ -66,6 +72,8 @@ function Home() {
         })
       );
     } else {
+      e.preventDefault();
+      setLatestModifiedData(!latestModifiedData);
       //For normal input fuctonality handle
       fetch("http://localhost:3010/posts/", {
         method: "POST",
@@ -73,6 +81,7 @@ function Home() {
           //All info convert to lowercase
           tag: TagText.toLowerCase(),
           todo: InputText.toLowerCase(),
+          time: new Date().getTime(),
           completed: false,
         }),
         headers: {
@@ -85,11 +94,22 @@ function Home() {
     }
   }
 
+  //To order the list according to latest modification time
+  //Todo list order button Handler
+  function modifiedListHandler() {
+    //Change or toggle the previous boolean state
+    setToggleModifiedData(!latestModifiedData);
+  }
+
+  //Toggle database and send specific database for render
+  const finalData = toggleModifiedData
+    ? todoData.sort((a, b) => b.time - a.time)
+    : todoData.sort((a, b) => a.time - b.time);
+
   return (
     <div className="app">
       <header className="app-header">
         <h1>Todo List</h1>
-        <hr />
       </header>
 
       <TodoInput
@@ -101,14 +121,23 @@ function Home() {
         submitHandler={submitHandler}
       />
 
-      <Search searchTearm={searchTearm} setSearchTearm={setSearchTearm} />
+      <Search
+        searchTearm={searchTearm}
+        setSearchTearm={setSearchTearm}
+        modifiedListHandler={modifiedListHandler}
+      />
+
       <TodoList
+        key={Math.floor(Math.random() * 1005 + 205)}
         searchTearm={searchTearm}
         setInputText={setInputText}
         setTagText={setTagText}
-        todoData={todoData}
+        finalData={finalData}
         setTodoData={setTodoData}
         setEditId={setEditId}
+        todoData={todoData}
+        setLatestModifiedData={setLatestModifiedData}
+        latestModifiedData={latestModifiedData}
       />
     </div>
   );

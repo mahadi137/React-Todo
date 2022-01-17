@@ -13,6 +13,21 @@
   margin-right: -5px;
 }
 
+.order-button {
+  height: 28px;
+  margin-top: 10px;
+  color: #4e9f3d;
+  background: #f7fffe;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.order-button:hover {
+  color: #f7fffe;
+  background: #4e9f3d;
+}
+
 hr {
   border: 0;
   height: 1px;

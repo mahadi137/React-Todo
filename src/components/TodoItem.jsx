@@ -16,13 +16,13 @@ const TodoItem = (props) => {
   const todoEditHandler = () => {
     props.todoData.find((foundItem) => {
       //Target todo with matching ID
-      if (foundItem.id === props.eachTodo.id) {
+      if (foundItem.id === props.id) {
         //Set todo text in input field
         props.setInputText(foundItem.todo);
         //Set todo tag in tag field
         props.setTagText(foundItem.tag);
         //get id
-        props.setEditId(props.eachTodo.id);
+        props.setEditId(props.id);
       }
       return "";
     });
@@ -30,15 +30,17 @@ const TodoItem = (props) => {
 
   //Delete button Functionality
   const deleteHandler = () => {
+    props.setLatestModifiedData(Math.random() + 100);
     props.setTodoData(
       props.todoData.map((item) => {
         //Target todo with matching ID
-        if (item.id === props.eachTodo.id) {
-          fetch("http://localhost:3010/posts/" + props.eachTodo.id, {
+        if (item.id === props.id) {
+          fetch("http://localhost:3010/posts/" + props.id, {
             method: "PATCH",
             body: JSON.stringify({
-              //Only change False to True or vise versa
-              completed: !item.completed,
+              ...item,
+              //Only change False to True
+              completed: true,
             }),
             headers: {
               "Content-type": "application/json",

@@ -17,6 +17,14 @@ export default function Search(props) {
             }}
           />
         </form>
+        <button
+          //Todo order button
+          onClick={props.modifiedListHandler}
+          className="order-button"
+          type="submit"
+        >
+          Order List &nbsp; <i class="fas fa-sort"></i>
+        </button>
         <hr />
       </div>
     </>

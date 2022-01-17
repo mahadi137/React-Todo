@@ -31,15 +31,18 @@ const TodoList = (props) => {
               return (
                 <div>
                   <TodoItem
-                    key={eachTodo.id}
+                    key={Math.random() * 2002 + 109}
                     text={eachTodo.todo}
                     tag={eachTodo.tag}
-                    eachTodo={eachTodo}
+                    id={eachTodo.id}
                     setInputText={props.setInputText}
                     setTagText={props.setTagText}
                     setTodoData={props.setTodoData}
-                    todoData={props.todoData}
+                    finalData={props.finalData}
                     setEditId={props.setEditId}
+                    todoData={props.todoData}
+                    setLatestModifiedData={props.setLatestModifiedData}
+                    latestModifiedData={props.latestModifiedData}
                   />
                 </div>
               );

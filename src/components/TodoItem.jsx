@@ -29,16 +29,15 @@ const TodoItem = (props) => {
   };
 
   //Delete button Functionality
-  const deleteHandler = () => {
-    props.setLatestModifiedData(Math.random() + 100);
+  const deleteHandler = (e) => {
+    //e.preventDefault();
     props.setTodoData(
-      props.todoData.map((item) => {
+      props.finalData.map((item) => {
         //Target todo with matching ID
         if (item.id === props.id) {
           fetch("http://localhost:3010/posts/" + props.id, {
             method: "PATCH",
             body: JSON.stringify({
-              ...item,
               //Only change False to True
               completed: true,
             }),
@@ -46,6 +45,7 @@ const TodoItem = (props) => {
               "Content-type": "application/json",
             },
           }).then((response) => response.json());
+          props.setLatestModifiedData(!props.latestModifiedData);
         }
         return item;
       })
@@ -80,7 +80,7 @@ const TodoItem = (props) => {
             //Todo Edit Button
             onClick={todoEditHandler}
             className="button-edit"
-            type="submit"
+            type="button"
           >
             <i class="far fa-edit"></i>
           </button>
@@ -89,7 +89,7 @@ const TodoItem = (props) => {
             //Todo Delete Button
             onClick={deleteHandler}
             className="button-trash"
-            type="submit"
+            type="button"
           >
             <i class="far fa-trash-alt"></i>
           </button>

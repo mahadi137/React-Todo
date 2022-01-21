@@ -24,7 +24,7 @@ function Home() {
   //Toggle the database
   const [toggleModifiedData, setToggleModifiedData] = useState(false);
   //useEffect use after delete button click
-  const [latestModifiedData, setLatestModifiedData] = useState(null);
+  const [latestModifiedData, setLatestModifiedData] = useState(false);
 
   //For loading data from database
   useEffect(() => {
@@ -38,13 +38,13 @@ function Home() {
 
   //Submit button functionality
   function submitHandler(e) {
+    // e.preventDefault();
     if (!InputText || !TagText) {
       //if user forget to input todo text or tag
       //only tag is not enough
-      alert("Please Fill Data First!");
+      alert("Please Fill Both Section!");
     } else if (editId) {
-      e.preventDefault();
-      setLatestModifiedData(!latestModifiedData);
+      //e.preventDefault();
       //if user click on edit button
       //only for purticular id
       setTodoData(
@@ -54,16 +54,16 @@ function Home() {
             fetch("http://localhost:3010/posts/" + editId, {
               method: "PATCH",
               body: JSON.stringify({
-                ...e,
                 tag: TagText.toLowerCase(),
                 todo: InputText.toLowerCase(),
-                //False will let update info on not completed list
+                time: new Date().getTime(),
                 completed: false,
               }),
               headers: {
                 "Content-type": "application/json",
               },
             }).then((response) => response.json());
+            setLatestModifiedData(!latestModifiedData);
             //After click submit button fields will be empty
             setInputText("");
             setTagText("");
@@ -72,8 +72,6 @@ function Home() {
         })
       );
     } else {
-      e.preventDefault();
-      setLatestModifiedData(!latestModifiedData);
       //For normal input fuctonality handle
       fetch("http://localhost:3010/posts/", {
         method: "POST",
@@ -88,6 +86,8 @@ function Home() {
           "Content-type": "application/json",
         },
       }).then((response) => response.json());
+      setLatestModifiedData(!latestModifiedData);
+
       //After click submit button fields will be empty
       setInputText("");
       setTagText("");
@@ -98,7 +98,7 @@ function Home() {
   //Todo list order button Handler
   function modifiedListHandler() {
     //Change or toggle the previous boolean state
-    setToggleModifiedData(!latestModifiedData);
+    setToggleModifiedData(!toggleModifiedData);
   }
 
   //Toggle database and send specific database for render

@@ -10,7 +10,7 @@ const TodoList = (props) => {
   return (
     <div className="todo-container">
       <ul className="todo-list">
-        {props.todoData
+        {props.finalData
           //Search Functionality
           .filter((e) => {
             //if Search is blank

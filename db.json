@@ -3,135 +3,58 @@
     {
       "tag": "skill",
       "todo": "do coding jsx",
-      "time": 1641730146553,
-      "completed": false,
+      "time": 1642615212182,
+      "completed": true,
       "id": 1
     },
     {
       "tag": "entertianment",
       "todo": "watch movie",
-      "time": 1641730170608,
+      "time": 1642616134438,
       "completed": false,
       "id": 2
     },
     {
-      "tag": "learn",
-      "todo": "learn react on udemy",
-      "time": 1641730211860,
-      "completed": false,
-      "id": 3
-    },
-    {
       "tag": "hobby",
-      "todo": "ride by-cycle",
-      "time": 1641830394975,
+      "todo": "ride bi-cycle",
+      "time": 1642615018574,
       "completed": false,
       "id": 4
     },
     {
       "tag": "skill",
-      "todo": "complete ui project",
-      "time": 1641830496047,
+      "todo": "complete ui projects",
+      "time": 1642614908566,
       "completed": false,
       "id": 5
     },
     {
-      "tag": "fgfd",
-      "todo": "fgfg",
-      "time": 1641830523686,
-      "completed": true,
+      "tag": "launch",
+      "todo": "meeting with friends at hook tampere",
+      "time": 1642612611031,
+      "completed": false,
       "id": 6
     },
     {
-      "tag": "vsdv",
-      "todo": "xcxcv",
-      "time": 1641830639343,
-      "completed": true,
+      "tag": "competition",
+      "todo": "eat chicken wings",
+      "time": 1642614927950,
+      "completed": false,
       "id": 7
     },
     {
-      "tag": "cdc",
-      "todo": "x1222222",
-      "time": 1641830664031,
-      "completed": false,
-      "id": 8
-    },
-    {
-      "tag": "dvdsv",
-      "todo": "dvdcvdsv",
-      "time": 1641830685279,
-      "completed": false,
+      "tag": "learn",
+      "todo": "make todo",
+      "time": 1642800917886,
+      "completed": true,
       "id": 9
     },
     {
-      "tag": "dvdsvdsv",
-      "todo": "dvdsvdsvdsvdsv",
-      "time": 1641830691846,
+      "tag": "work",
+      "todo": "go to work at 10pm",
+      "time": 1642616240261,
       "completed": false,
-      "id": 10
-    },
-    {
-      "tag": "cvdsvc",
-      "todo": "xcvdsvsdv12345",
-      "time": 1641830723736,
-      "completed": false,
-      "id": 11
-    },
-    {
-      "tag": "dvcdsc",
-      "todo": "vczxvcv",
-      "time": 1641830728854,
-      "completed": true,
-      "id": 12
-    },
-    {
-      "tag": "fgfdgfgxxx",
-      "todo": "fdgfdg",
-      "time": 1641830815615,
-      "completed": true,
       "id": 13
-    },
-    {
-      "tag": "aaaa",
-      "todo": "aaaaa",
-      "time": 1641830832294,
-      "completed": true,
-      "id": 14
-    },
-    {
-      "tag": "qqqq",
-      "todo": "qqqqq",
-      "time": 1641830861550,
-      "completed": true,
-      "id": 15
-    },
-    {
-      "tag": "",
-      "todo": "dvdsc",
-      "time": 1641830903566,
-      "completed": true,
-      "id": 16
-    },
-    {
-      "tag": "q122",
-      "todo": "dsgdffds",
-      "time": 1641830926270,
-      "completed": true,
-      "id": 17
-    },
-    {
-      "tag": "zzzz",
-      "todo": "zzzzz",
-      "time": 1642454990076,
-      "completed": true,
-      "id": 18
-    },
-    {
-      "tag": "qq",
-      "todo": "qqqqqqqqqqqqqqqqqqq",
-      "time": 1642455148643,
-      "completed": true,
-      "id": 19
     }
   ]
 }

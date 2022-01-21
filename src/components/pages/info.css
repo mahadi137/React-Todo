@@ -1,6 +1,5 @@
 .info {
   height: 100vh;
-  margin: 0 auto;
   width: 1140px;
 }
 
@@ -11,7 +10,6 @@
 
 .info h1 {
   color: #4e9f3d;
-  margin: 0 auto;
   width: 700px;
   justify-content: center;
   text-align: center;
@@ -33,14 +31,24 @@ p {
   font-size: 20px;
 }
 
+.info,
+.info h1,
+.homeandarchive,
+.mobileview img {
+  margin: 0 auto;
+}
+
 .hamburgericon {
   width: 50px;
   margin-left: 10px;
 }
 
 .homeandarchive {
-  width: 1000px;
-  margin: 35px auto;
+  width: 100%;
+}
+
+.mobileview {
+  display: grid;
 }
 
 @media only screen and (max-width: 500px) {
@@ -73,5 +81,9 @@ p {
 
   .homeandarchive {
     width: 100%;
+  }
+
+  .mobileview img {
+    width: 80%;
   }
 }

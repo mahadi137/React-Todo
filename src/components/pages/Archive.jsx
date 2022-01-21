@@ -35,7 +35,7 @@ export default function Archive() {
 
                 <button
                   //Undo button Hnadle functionality
-                  onClick={(e) => {
+                  onClick={() => {
                     setArchiveDataTodoData(
                       archiveDataTodoData.map((item) => {
                         if (item.id === eachArchiveTodo.id) {

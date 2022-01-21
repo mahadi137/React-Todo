@@ -5,6 +5,7 @@ import img1 from "../pages/image/menubutton.png";
 import img2 from "../pages/image/homepage.png";
 import img3 from "../pages/image/archivepage.png";
 import img4 from "../pages/image/kuvaus.png";
+import img5 from "../pages/image/mobile_view.png";
 
 //CSS
 import "./info.css";
@@ -32,22 +33,23 @@ export default function Info() {
         To get menu and close menu, click the hamburger menu Icon
         <img className="hamburgericon" src={img1} alt="hamburgericon"></img>
       </p>
-      <h4>
-        Home page guide:
-        <img
-          className="homeandarchive"
-          src={img2}
-          alt="Home page guide pic"
-        ></img>
-      </h4>
-      <h4>
-        Archive page guide:
-        <img
-          className="homeandarchive"
-          src={img3}
-          alt="Archive page guide pic"
-        ></img>
-      </h4>
+      <h4>Home page guide:</h4>
+      <img
+        className="homeandarchive"
+        src={img2}
+        alt="Home page guide pic"
+      ></img>
+
+      <h4>Archive page guide:</h4>
+      <img
+        className="homeandarchive"
+        src={img3}
+        alt="Archive page guide pic"
+      ></img>
+      <div className="mobileview">
+        <h4>Mobile View:</h4>
+        <img src={img5} alt="mobile view"></img>
+      </div>
     </div>
   );
 }

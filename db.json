@@ -4,7 +4,7 @@
       "tag": "skill",
       "todo": "do coding jsx",
       "time": 1642615212182,
-      "completed": true,
+      "completed": false,
       "id": 1
     },
     {
@@ -25,28 +25,28 @@
       "tag": "skill",
       "todo": "complete ui projects",
       "time": 1642614908566,
-      "completed": false,
+      "completed": true,
       "id": 5
     },
     {
       "tag": "launch",
       "todo": "meeting with friends at hook tampere",
       "time": 1642612611031,
-      "completed": false,
+      "completed": true,
       "id": 6
     },
     {
       "tag": "competition",
       "todo": "eat chicken wings",
       "time": 1642614927950,
-      "completed": false,
+      "completed": true,
       "id": 7
     },
     {
       "tag": "learn",
       "todo": "make todo",
       "time": 1642800917886,
-      "completed": true,
+      "completed": false,
       "id": 9
     },
     {

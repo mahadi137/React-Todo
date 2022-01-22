@@ -113,6 +113,7 @@ function Home() {
       </header>
 
       <TodoInput
+        key={Math.random() * 2002 + 109}
         InputText={InputText}
         setInputText={setInputText}
         TagText={TagText}
@@ -122,13 +123,14 @@ function Home() {
       />
 
       <Search
+        key={Math.random() * 20502 + 109}
         searchTearm={searchTearm}
         setSearchTearm={setSearchTearm}
         modifiedListHandler={modifiedListHandler}
       />
 
       <TodoList
-        key={Math.floor(Math.random() * 1005 + 205)}
+        key={Math.random() * 105555 + 205}
         searchTearm={searchTearm}
         setInputText={setInputText}
         setTagText={setTagText}

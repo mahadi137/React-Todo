@@ -23,7 +23,7 @@ export default function Search(props) {
           className="order-button"
           type="submit"
         >
-          Order List &nbsp; <i class="fas fa-sort"></i>
+          Order List &nbsp; <i className="fas fa-sort"></i>
         </button>
         <hr />
       </div>

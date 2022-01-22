@@ -25,13 +25,13 @@ const TodoList = (props) => {
             }
             return "";
           })
-          .map((eachTodo) => {
+          .map((eachTodo, index) => {
             //Show data which todos are not deleted
             if (eachTodo.completed === false) {
               return (
-                <div>
+                <div key={index}>
                   <TodoItem
-                    key={Math.random() * 2002 + 109}
+                    key={eachTodo.id}
                     text={eachTodo.todo}
                     tag={eachTodo.tag}
                     id={eachTodo.id}

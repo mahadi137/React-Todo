@@ -59,7 +59,7 @@ export default function Archive() {
                   className="button-undo"
                   type="submit"
                 >
-                  <i class="fas fa-undo"></i>
+                  <i className="fas fa-undo"></i>
                 </button>
               </div>
             </div>

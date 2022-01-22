@@ -44,7 +44,7 @@ const TodoInput = (props) => {
           className="submit-button"
           type="submit"
         >
-          <i class="fas fa-plus-circle"></i>
+          <i className="fas fa-plus-circle"></i>
         </button>
       </form>
     </div>

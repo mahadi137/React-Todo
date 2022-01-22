@@ -73,7 +73,7 @@ const TodoItem = (props) => {
             className={"button-check"}
             type="submit"
           >
-            <i class="fas fa-check"></i>
+            <i className="fas fa-check"></i>
           </button>
 
           <button
@@ -82,7 +82,7 @@ const TodoItem = (props) => {
             className="button-edit"
             type="button"
           >
-            <i class="far fa-edit"></i>
+            <i className="far fa-edit"></i>
           </button>
 
           <button
@@ -91,7 +91,7 @@ const TodoItem = (props) => {
             className="button-trash"
             type="button"
           >
-            <i class="far fa-trash-alt"></i>
+            <i className="far fa-trash-alt"></i>
           </button>
         </div>
       </div>
